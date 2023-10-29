@@ -1,0 +1,21 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Skill {
+  name   String @id
+  weight Int    @default(0)
+
+  createdAt DateTime @default(now()) @map("created_at")
+  // updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("skills")
+}
