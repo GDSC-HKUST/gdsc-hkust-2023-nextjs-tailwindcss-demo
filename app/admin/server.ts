@@ -7,7 +7,7 @@ import { z } from "zod";
 export async function getSkills() {
   return (await prisma.skill.findMany())
     .sort((a, b) =>
-      a.weight !== b.weight ? a.weight - b.weight : a.name > b.name ? 1 : -1
+      a.weight !== b.weight ? b.weight - a.weight : a.name > b.name ? 1 : -1
     )
     .map((skill) => skill.name);
 }
