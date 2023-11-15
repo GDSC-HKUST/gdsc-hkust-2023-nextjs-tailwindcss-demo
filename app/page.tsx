@@ -11,7 +11,7 @@ export default async function Page() {
             Full-stack Developer
           </p>
         </div>
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-600 text-justify">
           Nostrud fugiat cillum pariatur proident elit. Aute Lorem incididunt
           dolor tempor ut. Ullamco occaecat aliquip dolore incididunt tempor{" "}
           <span className="underline decoration-2 decoration-blue-600">
@@ -55,7 +55,7 @@ export default async function Page() {
               <p className="font-medium">
                 Email:{" "}
                 <a
-                  className="underline font-normal"
+                  className="underline font-normal hover:text-gray-400"
                   href="mailto:me@johndoe.com"
                 >
                   me@johndoe.com
@@ -64,7 +64,7 @@ export default async function Page() {
               <p className="font-medium">
                 LinkedIn:{" "}
                 <a
-                  className="underline font-normal"
+                  className="underline font-normal hover:text-gray-400"
                   href="https://linkedin.com/in/???"
                 >
                   linkedin.com/in/???
@@ -73,7 +73,7 @@ export default async function Page() {
               <p className="font-medium">
                 Portfolio:{" "}
                 <a
-                  className="underline font-normal"
+                  className="underline font-normal hover:text-gray-400"
                   href="https://example.com/"
                 >
                   example.com
@@ -181,7 +181,7 @@ export default async function Page() {
                   <p className=" text-gray-600 italic text-xs">
                     Google, Hong Kong
                   </p>
-                  <ul className="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                  <ul className="list-disc pl-5 text-gray-600 text-sm space-y-1 text-justify">
                     <li>
                       Quis nisi minim exercitation quis in veniam proident enim
                       dolore veniam. Consectetur est deserunt enim ut enim
